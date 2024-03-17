@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body style="background-color: brown;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Developer Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container text-center">
+            <h1>Hasan Sohaib</h1>
+            <p>Web Developer</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="hasan.jpg" alt="John Doe" class="profile-pic img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <p></p>
+                    <div class="buttons">
+                        <button class="btn btn-primary" onclick="showSkills()">Skills</button>
+                        <button class="btn btn-primary" onclick="showExperience()">Experience</button>
+                        <button class="btn btn-primary" onclick="showEducation()">Education</button>
+                    </div>
+                    <div id="content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="text-center">Services</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service">
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, JavaScript, Django, Python</p>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <p class="text-center">Email: <a href="mailto:sohaibhasanpk@gmail.com">Hasan Sohaib</a></p>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+    <script src="portfolio.js"></script>
+</body>
+</html>
