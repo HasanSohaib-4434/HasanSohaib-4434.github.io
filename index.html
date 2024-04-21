@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" href="index.css">
 </head>
-<body style="background-color: brown;">
+<body style="background-color: white;">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -29,32 +29,69 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container text-center">
-            <h1>Hasan Sohaib</h1>
-            <p>Web Developer</p>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="text-center">About Me</h2>
+    <section id="home" class="hero" >
+        <div class="container text-center" >
             <div class="row">
-                <div class="col-md-6">
-                    <img src="hasan.jpg" alt="John Doe" class="profile-pic img-fluid">
+                <div class="col-md-6 profile d-flex align-items-center justify-content-center">
+                    <img src="hasan1.jpg" alt="Hasan Sohaib" class="profile-pic img-fluid">
                 </div>
-                <div class="col-md-6">
-                    <p></p>
-                    <div class="buttons">
-                        <button class="btn btn-primary" onclick="showSkills()">Skills</button>
-                        <button class="btn btn-primary" onclick="showExperience()">Experience</button>
-                        <button class="btn btn-primary" onclick="showEducation()">Education</button>
+                <div class="col-md-6 profile-info d-flex align-items-center justify-content-center">
+                    <div class="text-left">
+                        <h1 class="name">I am Hasan Sohaib</h1>
+                        <h2>Web Developer</h2>
                     </div>
-                    <div id="content"></div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <br><br>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-info">
+                <h2>Name: Hasan Sohaib</h2>
+                <p>
+                    I am currently a 3rd-year student at FAST NUCES, specializing in Computer Science. I have experience in web development using Django for backend and HTML, CSS, and JavaScript for frontend. Currently, I am expanding my skills by working with Node.js and Express.js for backend development.
+                </p>
+                <h3>Education</h3>
+                <div class="education-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>FAST NUCES CFD Campus</h4>
+                            <p>Computer Science</p>
+                            <p>Date: 2021 - Present</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="languages">
+                <h3>Languages & Libraries I Know</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <ul>
+                            <li class="python">Python (with pandas & numpy)<span class="percentage">70%</span></li>
+                            <li class="javascript">JavaScript<span class="percentage">50-60%</span></li>
+                            <li class="cpp">C++<span class="percentage">80%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tools">
+                <h3>Tools I Have Used</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <ul>
+                            <li>Visual Studio</li>
+                            <li>VS Code</li>
+                            <li>PyCharm</li>
+                            <li>Dosbox</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <section id="services" class="services">
         <div class="container">
