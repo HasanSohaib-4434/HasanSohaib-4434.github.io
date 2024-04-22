@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasan Sohaib</title>
-  
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <link rel="stylesheet" href="index.css">
 </head>
-<body style="background-color: white;">
+
+<body style="background-color: #333;">
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div class="container">
-                <a class="navbar-brand" href="#home">Hasan Sohaib</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#home">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skiills">Skills</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -29,96 +35,170 @@
         </nav>
     </header>
 
-    <section id="home" class="hero" >
-        <div class="container text-center" >
+    <section id="home" class="hero">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-md-6 profile d-flex align-items-center justify-content-center">
                     <img src="hasan1.jpg" alt="Hasan Sohaib" class="profile-pic img-fluid">
                 </div>
                 <div class="col-md-6 profile-info d-flex align-items-center justify-content-center">
                     <div class="text-left">
-                        <h1 class="name">I am Hasan Sohaib</h1>
-                        <h2>Web Developer</h2>
+                        <h1 class="name"><span class="first">I am</span> <span class="second">Hasan Sohaib</span> </h1>
+                        <h2><span id="element"></span></h2>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <br><br>
+
+    <!-- <br><br> -->
+    <hr>
     <section id="about" class="about">
+    <div class="container">
+        <div class="about-info">
+            <h2>About Me</h2>
+            
+           
+        </div>
+        <p style="color: white;">
+            I am currently a 3rd-year student at FAST NUCES, specializing in Computer Science. I have experience
+            in web development using Django for backend and HTML, CSS, and JavaScript for frontend. Currently, I
+            am expanding my skills by working with Node.js and Express.js for backend development.
+        </p>
+        
+        <h3>Education</h3>
+        <div class="languages">
+            <div class="card">
+                <div class="card-body">
+                    <h4>FAST NUCES CFD Campus</h4>
+                    <p>Computer Science</p>
+                    <p>Date: 2021 - Present</p>
+                </div>
+            </div>
+        </div>
+        <div class="languages">
+            <h3>Languages & Libraries I Know</h3>
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li class="python"><img src="/python.png" alt=""><span class="percentage">70%</span></li>
+                        <li class="javascript"><img src="/java-script.png" alt=""><span
+                                class="percentage">50-60%</span></li>
+                        <li class="cpp"><img src="/c-.png" alt=""><span class="percentage">80%</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tools">
+            <h3>Tools I Have Used</h3>
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li class="VS"><img src="/visual-studio.png" alt=""></li>
+                        <li class="pycharm"><img src="/pycharm.png" alt=""></li>
+                        <li class="assembly"><img src="/assembly-machine.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <br><br>
+    <section id="projects" class="projects" style="background-color: #343a40;">
         <div class="container">
-            <div class="about-info">
-                <h2>Name: Hasan Sohaib</h2>
-                <p>
-                    I am currently a 3rd-year student at FAST NUCES, specializing in Computer Science. I have experience in web development using Django for backend and HTML, CSS, and JavaScript for frontend. Currently, I am expanding my skills by working with Node.js and Express.js for backend development.
-                </p>
-                <h3>Education</h3>
-                <div class="education-card">
-                    <div class="card">
+            <h2 class="section-heading">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card">
                         <div class="card-body">
-                            <h4>FAST NUCES CFD Campus</h4>
-                            <p>Computer Science</p>
-                            <p>Date: 2021 - Present</p>
+                            <h3>Student Management System</h3>
+                            <p class="description">Developed student management System using C#</p>
+                            <a href="https://github.com/HasanSohaib-4434/Student-Management-System.git"
+                                class="btn btn-primary" target="_blank">View Project</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="languages">
-                <h3>Languages & Libraries I Know</h3>
-                <div class="card">
-                    <div class="card-body">
-                        <ul>
-                            <li class="python">Python (with pandas & numpy)<span class="percentage">70%</span></li>
-                            <li class="javascript">JavaScript<span class="percentage">50-60%</span></li>
-                            <li class="cpp">C++<span class="percentage">80%</span></li>
-                        </ul>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <h3>Ecommerce website</h3>
+                            <p class="description">Developed a Fully functional Ecommerce website using Django.</p>
+                            <a href="https://github.com/HasanSohaib-4434/E-shop.git" class="btn btn-primary"
+                                target="_blank">View Project</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="tools">
-                <h3>Tools I Have Used</h3>
-                <div class="card">
-                    <div class="card-body">
-                        <ul>
-                            <li>Visual Studio</li>
-                            <li>VS Code</li>
-                            <li>PyCharm</li>
-                            <li>Dosbox</li>
-                        </ul>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <h3>Global Economy Analyzer</h3>
+                            <p class="description">Developed a Economy Analyzer using Python</p>
+                            <a href="https://github.com/HasanSohaib-4434/Global-Economy-Analyzer"
+                                class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    
 
-    <section id="services" class="services">
+
+    <br><br>
+    <section id="skiills" class="skills" style="background-color: #343a40;">
         <div class="container">
-            <h2 class="text-center">Services</h2>
+            <h2 class="section-heading">Skills</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="service">
-                        <h3>Web Development</h3>
-                        <p>HTML, CSS, JavaScript, Django, Python</p>
+                <div class="col-md-4">
+                    <div class="skills-card">
+                        <div class="card-body">
+                            <h3>JS</h3>
+                            <p class="description">Developed web applications using JS with Nodejs and ExpressJS</p>
+
+                        </div>
                     </div>
                 </div>
-             
+                <div class="col-md-4">
+                    <div class="skills-card">
+                        <div class="card-body">
+                            <h3>Django</h3>
+                            <p class="description">Developed a Fully functional Ecommerce website using Django as
+                                backend.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skills-card">
+                        <div class="card-body">
+                            <h3>C#</h3>
+                            <p class="description">Developed fully functional managemnt system using C# with GUI</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="contact" class="contact" style="background-color: #343a40;">
+        <div class="container">
+            <div class="contact-txt">
+
+
+                <p>&copy; 2024 Hasan Sohaib. All rights reserved.</p>
+                <p>Email: <a href="mailto:sohaibhasanpk@gmail.com">sohaibhasanpk@gmail.com</a></p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="text-center">Contact Me</h2>
-            <p class="text-center">Email: <a href="mailto:sohaibhasanpk@gmail.com">Hasan Sohaib</a></p>
-        </div>
-    </section>
-    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- 
+
     <script src="index.js"></script>
 </body>
+
 </html>
