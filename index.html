@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasan Sohaib</title>
+    <title>Hasan Sohaib | Full Stack Developer</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body style="background-color: #333;">
-
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#home">Portfolio</a>
+                <a class="navbar-brand" href="#home">Hasan Sohaib</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,7 +29,7 @@
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skiills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -38,158 +40,392 @@
     <section id="home" class="hero">
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-6 profile d-flex align-items-center justify-content-center">
+                <div class="col-md-6 profile d-flex align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="1000">
                     <img src="hasan1.jpg" alt="Hasan Sohaib" class="profile-pic img-fluid">
                 </div>
-                <div class="col-md-6 profile-info d-flex align-items-center justify-content-center">
+                <div class="col-md-6 profile-info d-flex align-items-center justify-content-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                     <div class="text-left">
-                        <h1 class="name"><span class="first">I am</span> <span class="second">Hasan Sohaib</span> </h1>
-                        <h2><span id="element"></span></h2>
+                        <h1 class="name"><span class="first">I am</span> <span class="second">Hasan Sohaib</span></h1>
+                        <h2 class="typed-text"><span id="element"></span></h2>
+                        <div class="social-icons mt-4">
+                            <a href="https://github.com/HasanSohaib-4434" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="mailto:sohaibhasanpk@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="#projects" class="btn btn-outline-light ml-3">View Work</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- <br><br> -->
-    <hr>
     <section id="about" class="about">
-    <div class="container">
-        <div class="about-info">
-            <h2>About Me</h2>
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+                    <div class="about-content">
+                        <p>
+                            Final-year BSCS student with expertise in full-stack development, primarily in the MERN stack, with some experience in Django. Skilled in building scalable web applications, experience in app development, and currently exploring Generative AI technology.
+                        </p>
+                        <p>
+                            I'm passionate about creating efficient, user-friendly applications and continuously learning new technologies to enhance my skillset.
+                        </p>
+                        <div class="mt-4">
+                            <a href="HasanSohaib_resume.pdf" class="btn btn-primary" download>Download Resume</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="languages mb-4">
+                        <h3>Programming Languages</h3>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="skill-bar">
+                                    <span class="skill-label"><img src="python.png" alt="Python" > Python</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-bar">
+                                    <span class="skill-label"><img src="java-script.png" alt="JavaScript"> JavaScript</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-bar">
+                                    <span class="skill-label"><img src="c-.png" alt="C++"> C++</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tools">
+                        <h3>Development Tools</h3>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="tools-grid">
+                                    <div class="tool-item">
+                                        <img src="vscode.png" alt="Visual Studio">
+                                        <span>Visual Studio</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <img src="pycharm.png" alt="PyCharm">
+                                        <span>PyCharm</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <img src="astudio.png" alt="Assembly">
+                                        <span>Andriod Studio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Projects</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-overlay">
+                            <h3>DeafEd - Powered Sign Language Learning</h3>
+                            <p class="description">
+                                An interactive learning platform for deaf children featuring real-time gesture recognition and animated lessons to teach sign language effectively. The app includes an educator dashboard to track student progress, analyze test accuracy over time, and manage student sections efficiently.
+                            </p>
+                            <div class="project-tech">
+                                <span>React Native (Expo CLI)</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>MediaPipe</span>
+                                <span>OpenCV</span>
+                                <span>Flask</span>
+                                <span>Machine Learning</span>
+                            </div>
+                            <a href="https://github.com/HasanSohaib-4434/DeafEd" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-overlay">
+                            <h3>Medicare Centre</h3>
+                            <p class="description">
+                                A telemedicine web platform enabling patients to consult doctors remotely. Features include appointment scheduling, medical record management, and real-time video consultations using Google Meet API.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>Google Meet API</span>
+                            </div>
+                            <a href="https://github.com/F219180/medicare-website" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-overlay">
+                            <h3>Student Management System</h3>
+                            <p class="description">A comprehensive system for managing student records, attendance, and grades using C# with a user-friendly GUI interface.</p>
+                            <div class="project-tech">
+                                <span>C#</span>
+                                <span>SQL</span>
+                            </div>
+                            <a href="https://github.com/HasanSohaib-4434/Student-Management-System.git" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-overlay">
+                            <h3>E-commerce Website</h3>
+                            <p class="description">A fully functional e-commerce platform with user authentication, product catalog, shopping cart, and payment processing built with Django.</p>
+                            <div class="project-tech">
+                                <span>Django</span>
+                                <span>Python</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <a href="https://github.com/HasanSohaib-4434/E-shop.git" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-overlay">
+                            <h3>E-commerce Website</h3>
+                            <p class="description">A fully functional e-commerce platform with user authentication, product catalog, shopping cart, and payment processing built with Django.</p>
+                            <div class="project-tech">
+                                <span>Django</span>
+                                <span>Python</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <a href="https://github.com/HasanSohaib-4434/E-shop.git" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-overlay">
+                            <h3>Global Economy Analyzer</h3>
+                            <p class="description">An analytical tool for visualizing and comparing economic indicators across countries and regions using Python data science libraries.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Matplotlib</span>
+                            </div>
+                            <a href="https://github.com/HasanSohaib-4434/Global-Economy-Analyzer" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Technical Skills</h2>
+                <div class="underline"></div>
+            </div>
             
            
-        </div>
-        <p style="color: white;">
-            I am currently a 3rd-year student at FAST NUCES, specializing in Computer Science. I have experience
-            in web development using Django for backend and HTML, CSS, and JavaScript for frontend. Currently, I
-            am expanding my skills by working with Node.js and Express.js for backend development.
-        </p>
-        
-        <h3>Education</h3>
-        <div class="languages">
-            <div class="card">
-                <div class="card-body">
-                    <h4>FAST NUCES CFD Campus</h4>
-                    <p>Computer Science</p>
-                    <p>Date: 2021 - Present</p>
-                </div>
-            </div>
-        </div>
-        <div class="languages">
-            <h3>Languages & Libraries I Know</h3>
-            <div class="card">
-                <div class="card-body">
-                    <ul>
-                        <li class="python"><img src="/python.png" alt=""><span class="percentage">70%</span></li>
-                        <li class="javascript"><img src="/java-script.png" alt=""><span
-                                class="percentage">50-60%</span></li>
-                        <li class="cpp"><img src="/c-.png" alt=""><span class="percentage">80%</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="tools">
-            <h3>Tools I Have Used</h3>
-            <div class="card">
-                <div class="card-body">
-                    <ul>
-                        <li class="VS"><img src="/visual-studio.png" alt=""></li>
-                        <li class="pycharm"><img src="/pycharm.png" alt=""></li>
-                        <li class="assembly"><img src="/assembly-machine.png" alt=""></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <br><br>
-    <section id="projects" class="projects" style="background-color: #343a40;">
-        <div class="container">
-            <h2 class="section-heading">Projects</h2>
+            
             <div class="row">
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <h3>Student Management System</h3>
-                            <p class="description">Developed student management System using C#</p>
-                            <a href="https://github.com/HasanSohaib-4434/Student-Management-System.git"
-                                class="btn btn-primary" target="_blank">View Project</a>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="skills-card">
+                        <div class="skills-icon">
+                            <i class="fas fa-brain"></i>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <h3>Ecommerce website</h3>
-                            <p class="description">Developed a Fully functional Ecommerce website using Django.</p>
-                            <a href="https://github.com/HasanSohaib-4434/E-shop.git" class="btn btn-primary"
-                                target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <h3>Global Economy Analyzer</h3>
-                            <p class="description">Developed a Economy Analyzer using Python</p>
-                            <a href="https://github.com/HasanSohaib-4434/Global-Economy-Analyzer"
-                                class="btn btn-primary" target="_blank">View Project</a>
-                        </div>
+                        <h3>Generative AI & NLP</h3>
+                        <p class="description">
+                            Built AI-powered applications leveraging Transformer-based models (BART, Whisper, DistilRoBERTa, LSTMs) for text generation, translation, and speech recognition. Developed custom Transformer models from scratch. Streamlit for real-time AI experiences.
+                        </p>
                     </div>
                 </div>
 
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="skills-card">
+                        <div class="skills-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript & Node.js</h3>
+                        <p class="description">Developed web applications using JavaScript with Node.js and Express.js for server-side functionality. Experienced in implementing responsive front-end interfaces.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+                    <div class="skills-card">
+                        <div class="skills-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React Native (Expo CLI)</h3>
+                        <p class="description">
+                            Developed cross-platform mobile apps using React Native (Expo CLI). Integrated MongoDB and Express.js for backend functionality and utilized MediaPipe for real-time gesture recognition.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="skills-card">
+                        <div class="skills-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React.js</h3>
+                        <p class="description">
+                            Developed interactive and responsive web applications using React.js. Implemented component-based architecture, state management (Redux), and API integration.
+                        </p>
+                    </div>
+                </div>
+
+             
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="skills-card">
+                        <div class="skills-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Django</h3>
+                        <p class="description">
+                            Developed a fully functional E-commerce website using Django as the backend, featuring a product catalog, shopping cart, and order management system.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+                    <div class="skills-card">
+                        <div class="skills-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h3>C#</h3>
+                        <p class="description">Developed fully functional management systems using C# with GUI interfaces, database integration, and comprehensive business logic implementations to solve real-world problems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+                    <div class="skills-card">
+                        <div class="skills-icon">
+                            <i class="fas fa-window-restore"></i>
+                        </div>
+                        <h3>Qt Designer & PyQt</h3>
+                        <p class="description">
+                            Developed an economy analysis desktop application using Qt Designer and PyQt. Implemented data visualization, statistical analysis, and interactive UI for analyzing economic trends.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+                    <div class="skills-card">
+                        <div class="skills-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>C++ Development</h3>
+                        <p class="description">
+                            Developed multiple projects in C++, ranging from procedural programming to object-oriented and data structures-based applications. Built a Battleship game using fundamental programming concepts, a Phone Book application implementing OOP principles, and a Notepad leveraging data structures for efficient text manipulation.
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
-
-    <br><br>
-    <section id="skiills" class="skills" style="background-color: #343a40;">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-heading">Skills</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="skills-card">
-                        <div class="card-body">
-                            <h3>JS</h3>
-                            <p class="description">Developed web applications using JS with Nodejs and ExpressJS</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skills-card">
-                        <div class="card-body">
-                            <h3>Django</h3>
-                            <p class="description">Developed a Fully functional Ecommerce website using Django as
-                                backend.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skills-card">
-                        <div class="card-body">
-                            <h3>C#</h3>
-                            <p class="description">Developed fully functional managemnt system using C# with GUI</p>
-
-                        </div>
-                    </div>
-                </div>
-
+            <div class="section-title" data-aos="fade-up">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
             </div>
-        </div>
-    </section>
-    <br><br>
-    <section id="contact" class="contact" style="background-color: #343a40;">
-        <div class="container">
-            <div class="contact-txt">
-
-
+            
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-form card">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-info card">
+                        <div class="card-body">
+                            <h3>Get In Touch</h3>
+                            <p>Feel free to reach out to me for collaboration, job opportunities, or just to say hello!</p>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:sohaibhasanpk@gmail.com">sohaibhasanpk@gmail.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <p><a href="https://github.com/HasanSohaib-4434" target="_blank">github.com/HasanSohaib-4434</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="social-icons mt-4">
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:sohaibhasanpk@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-text text-center mt-5" data-aos="fade-up">
                 <p>&copy; 2024 Hasan Sohaib. All rights reserved.</p>
-                <p>Email: <a href="mailto:sohaibhasanpk@gmail.com">sohaibhasanpk@gmail.com</a></p>
             </div>
         </div>
     </section>
@@ -197,8 +433,25 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script src="index.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
