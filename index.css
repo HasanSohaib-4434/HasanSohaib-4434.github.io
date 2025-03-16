@@ -268,7 +268,7 @@ header {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -278,6 +278,8 @@ header {
     display: flex;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
     flex-direction: column;
+    transition: all 0.3s ease;
+
 }
 
 .project-overlay h3 {
@@ -318,6 +320,7 @@ header {
     text-decoration: none;
     transition: all 0.3s ease;
     text-align: center;
+    
 }
 
 .btn-primary {
