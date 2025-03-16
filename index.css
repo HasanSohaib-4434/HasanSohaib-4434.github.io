@@ -227,95 +227,199 @@ header {
     color: #e0e0e0;
 }
 
-/* Projects Section */
+/* Projects Section Responsive CSS */
 .projects {
-    background-color: #1a1a1a;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.underline {
+    width: 60px;
+    height: 3px;
+    background: #4a89dc;
+    margin: 0 auto;
+}
+
+.project-container {
+    margin-top: 20px;
 }
 
 .project-card {
-    height: 300px;
-    border-radius: 10px;
-    margin-bottom: 30px;
     position: relative;
+    border-radius: 10px;
     overflow: hidden;
     background-color: #2d2d2d;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    height: 100%;
     transition: all 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    padding: 25px;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
-    padding: 30px;
     display: flex;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
     flex-direction: column;
-    justify-content: center;
-    opacity: 1;
-    transition: all 0.3s ease;
 }
 
-.project-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+.project-overlay h3 {
+    font-size: 20px;
+    font-weight: 700;
     margin-bottom: 15px;
     color: #fff;
 }
 
-.project-card .description {
-    font-size: 0.95rem;
+.project-overlay .description {
+    margin-bottom: 15px;
     color: #e0e0e0;
-    margin-bottom: 20px;
-    opacity: 1;
+    flex-grow: 1;
 }
 
 .project-tech {
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;
     margin-bottom: 20px;
-    opacity: 1;
 }
 
 .project-tech span {
     background-color: rgba(0, 123, 255, 0.2);
     color: #007bff;
     padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
 }
 
 .btn {
-    padding: 8px 20px;
-    font-weight: 500;
+    display: inline-block;
+    padding: 10px 20px;
     border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background: #4a89dc;
+    color: white;
+    border: none;
 }
 
 .btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background: #3579d8;
     transform: translateY(-2px);
 }
 
-.btn-outline-light:hover {
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
     transform: translateY(-2px);
 }
 
+.btn-sm {
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+    .col-lg-6 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+    
+    .project-overlay h3 {
+        font-size: 18px;
+    }
+    
+    .project-overlay {
+        padding: 20px;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+    
+    .project-overlay h3 {
+        font-size: 16px;
+    }
+    
+    .project-overlay {
+        padding: 15px;
+    }
+    
+    .project-tech span {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+    
+    .btn {
+        padding: 7px 14px;
+        font-size: 14px;
+    }
+    
+    .project-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .project-tech {
+        margin-bottom: 15px;
+    }
+    
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
 /* Skills Section */
 .skills {
     background-color: #121212;
