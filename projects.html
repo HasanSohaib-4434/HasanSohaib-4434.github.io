@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Hasan Sohaib — Web, Mobile, AI & Desktop Applications">
+    <title>Projects | Hasan Sohaib</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="bg-mesh"></div>
+    <div class="bg-grid"></div>
+
+    <header class="site-header">
+        <nav class="navbar-custom">
+            <a class="navbar-brand" href="index.html">Hasan Sohaib</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="projects.html">Projects</a></li>
+                <li><a class="nav-link" href="skills.html">Skills</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="container-custom">
+                <nav class="breadcrumb-nav">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Projects</span>
+                </nav>
+                <span class="vip-tag" data-aos="fade-up"><i class="fas fa-crown"></i> 33 GitHub Repositories</span>
+                <h1>My Projects</h1>
+                <p>Every public repository from my GitHub — web apps, AI systems, mobile platforms, and desktop software.</p>
+                <div class="projects-stats-bar" data-aos="fade-up" data-aos-delay="100">
+                    <div class="ps-stat"><strong>33</strong><span>Total Projects</span></div>
+                    <div class="ps-stat"><strong>18+</strong><span>AI / ML</span></div>
+                    <div class="ps-stat"><strong>12+</strong><span>Web Apps</span></div>
+                    <div class="ps-stat"><strong>5</strong><span>Featured</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-custom">
+                <div class="project-filter" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ai">AI / ML</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="desktop">Desktop</button>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card featured" data-category="ai" data-aos="fade-up">
+                        <span class="project-badge vip-badge">Featured</span>
+                        <div class="project-body">
+                            <h3>AuraPath</h3>
+                            <p class="description">AI-powered learning platform with personalized roadmaps, PDF-based RAG tutoring, streaming chat, flashcard generation, and hybrid retrieval (FAISS + BM25) using Google Gemini.</p>
+                            <div class="project-tech"><span>React</span><span>Node.js</span><span>FastAPI</span><span>MongoDB</span><span>FAISS</span><span>Gemini</span><span>RAG</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/AuraPath" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card featured" data-category="mobile" data-aos="fade-up">
+                        <span class="project-badge vip-badge">Featured</span>
+                        <div class="project-body">
+                            <h3>DeafEd — Sign Language Learning</h3>
+                            <p class="description">Interactive learning platform for deaf children with real-time gesture recognition, animated lessons, and an educator dashboard to track student progress.</p>
+                            <div class="project-tech"><span>React Native</span><span>Node.js</span><span>MongoDB</span><span>MediaPipe</span><span>Flask</span><span>ML</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/DeafEd" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card featured" data-category="web" data-aos="fade-up">
+                        <span class="project-badge vip-badge">Featured</span>
+                        <div class="project-body">
+                            <h3>WorldStar Enterprise</h3>
+                            <p class="description">Corporate website for international trade — sourcing, manufacturing, quality assurance, and global delivery across textiles, food, sports, leather, surgical, and glassware.</p>
+                            <div class="project-tech"><span>React</span><span>Vite</span><span>Tailwind CSS</span><span>React Router</span><span>Netlify</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/WorldStar" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener">Frontend</a>
+                                <a href="https://github.com/HasanSohaib-4434/WorldStarBackend" class="btn-custom btn-outline-custom btn-sm-custom" target="_blank" rel="noopener">Backend</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card featured" data-category="web" data-aos="fade-up">
+                        <span class="project-badge vip-badge">Featured</span>
+                        <div class="project-body">
+                            <h3>3D House Floor Planner</h3>
+                            <p class="description">Interactive 2D/3D house layout designer with drag-and-drop rooms, wall drawing, real-time 3D preview, measurements, undo/redo, and JSON project save/load.</p>
+                            <div class="project-tech"><span>Next.js</span><span>Three.js</span><span>React Three Fiber</span><span>Zustand</span><span>TypeScript</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/3D-Floor" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card featured" data-category="web" data-aos="fade-up">
+                        <span class="project-badge vip-badge">Featured</span>
+                        <div class="project-body">
+                            <h3>Medicare Centre</h3>
+                            <p class="description">Telemedicine web platform enabling remote doctor consultations with appointment scheduling, medical records, and Google Meet video integration.</p>
+                            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>MongoDB</span><span>Google Meet API</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/F219180/medicare-website" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Al-Farabi College</h3>
+                            <p class="description">Responsive college website with home, about, courses, admissions, and contact pages — animated UI with Framer Motion and Netlify serverless email.</p>
+                            <div class="project-tech"><span>React</span><span>Vite</span><span>Tailwind CSS</span><span>Framer Motion</span><span>Netlify</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/alfarabi-college" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>WorldStar Backend API</h3>
+                            <p class="description">Backend API service for WorldStar Enterprise — handles contact forms, email delivery, and server-side business logic for the trade platform.</p>
+                            <div class="project-tech"><span>Node.js</span><span>Express</span><span>Nodemailer</span><span>JavaScript</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/WorldStarBackend" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>DiReCT — Medical RAG System</h3>
+                            <p class="description">Clinical query answering using MIMIC-IV-Ext Direct dataset with BM25/embedding retrieval, FAISS indexing, and Google Gemini generation via Gradio.</p>
+                            <div class="project-tech"><span>Python</span><span>FAISS</span><span>Sentence Transformers</span><span>Gemini</span><span>Gradio</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/DiReCT" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>PermitSense</h3>
+                            <p class="description">Semantic search API over Austin, TX construction permit data using Sentence Transformers and ChromaDB with filterable similarity search.</p>
+                            <div class="project-tech"><span>FastAPI</span><span>ChromaDB</span><span>Sentence Transformers</span><span>Python</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/PermitSense" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Technical Assessment</h3>
+                            <p class="description">Coding assessment submission repository showcasing problem-solving tasks and technical evaluation deliverables.</p>
+                            <div class="project-tech"><span>JavaScript</span><span>GitHub</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Assessment-" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>NovaTec Backend</h3>
+                            <p class="description">Backend API service built for NovaTec — REST endpoints, server configuration, and business logic for a tech solutions platform.</p>
+                            <div class="project-tech"><span>Node.js</span><span>Express</span><span>JavaScript</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/novatecbackend" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Ask The Image</h3>
+                            <p class="description">Multimodal QA app — upload an image, ask via voice (Whisper) or text, get answers from BLIP-2 with text-to-speech playback.</p>
+                            <div class="project-tech"><span>Streamlit</span><span>BLIP-2</span><span>Whisper</span><span>PyTorch</span><span>Transformers</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/AskTheImage" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>VisNarrate</h3>
+                            <p class="description">Vision-language image captioning using BLIP with configurable decoding — beam search, top-k, and top-p sampling via Streamlit.</p>
+                            <div class="project-tech"><span>Streamlit</span><span>BLIP</span><span>PyTorch</span><span>Transformers</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/VisNarrate" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Math Riddle Factory</h3>
+                            <p class="description">Deepseek-math powered app that fine-tunes on math riddles to generate unique puzzle questions.</p>
+                            <div class="project-tech"><span>Python</span><span>Deepseek-math</span><span>Streamlit</span><span>Transformers</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/MathRiddleFactory" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Emoji Math Solver</h3>
+                            <p class="description">AI solver for emoji-based math problems that deciphers numerical values and solves equations.</p>
+                            <div class="project-tech"><span>Python</span><span>DeepSeKe-R1</span><span>Streamlit</span><span>Transformers</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Math-Problem-Solver" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Math Meme Corrector</h3>
+                            <p class="description">AI-powered app that corrects common math meme misconceptions using a fine-tuned Deepseek model.</p>
+                            <div class="project-tech"><span>Python</span><span>DeepSeKe-R1</span><span>Streamlit</span><span>Transformers</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Math-Meme-Repair" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Real-Time Chat Application</h3>
+                            <p class="description">Full-stack messaging app with JWT authentication, MongoDB persistence, and real-time communication via Socket.IO.</p>
+                            <div class="project-tech"><span>React</span><span>Node.js</span><span>Express</span><span>Socket.IO</span><span>MongoDB</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Chat-Application" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Chat Bot</h3>
+                            <p class="description">Conversational chatbot project exploring AI-driven dialogue and automated response systems.</p>
+                            <div class="project-tech"><span>Python</span><span>AI</span><span>NLP</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Chat-Bot" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>SoulTune To Speech</h3>
+                            <p class="description">Speech-enabled extension of SoulTune — detects emotions from voice and delivers personalized duas and Quranic verses with TTS output.</p>
+                            <div class="project-tech"><span>Python</span><span>Streamlit</span><span>Whisper</span><span>Transformers</span><span>TTS</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/SoulTuneToSpeech" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Resume Analyzer</h3>
+                            <p class="description">AI-powered resume analysis tool that parses CVs and provides intelligent feedback on skills, formatting, and job fit.</p>
+                            <div class="project-tech"><span>Node.js</span><span>Express</span><span>JavaScript</span><span>AI</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Resume-Analyzer" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Arabic-to-English Translator</h3>
+                            <p class="description">Transformer-based NMT model built from scratch using TensorFlow with a Streamlit web interface.</p>
+                            <div class="project-tech"><span>TensorFlow</span><span>Streamlit</span><span>Custom Transformer</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/ArabicToEnglish" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Bidirectional Code Translator</h3>
+                            <p class="description">Transformer-based NMT converting pseudocode to C++ and vice versa, trained on the SPOC dataset.</p>
+                            <div class="project-tech"><span>TensorFlow</span><span>Custom Transformer</span><span>SPOC Dataset</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/PseudoToCpp" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener">PtoC</a>
+                                <a href="https://github.com/HasanSohaib-4434/CppToPseudo" class="btn-custom btn-outline-custom btn-sm-custom" target="_blank" rel="noopener">CtoP</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>SoulTune</h3>
+                            <p class="description">AI spiritual assistant that transcribes speech, detects emotions, and suggests personalized duas and Quranic verses in Arabic, Urdu, and English.</p>
+                            <div class="project-tech"><span>Streamlit</span><span>Whisper</span><span>Transformers</span><span>Librosa</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/SoulTune" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Silent Interpreter v2</h3>
+                            <p class="description">AI speech-to-text app with real-time transcription, emotion detection, contextual classification, and automatic summarization.</p>
+                            <div class="project-tech"><span>Python</span><span>Streamlit</span><span>Whisper</span><span>Transformers</span><span>NLP</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Silent-Interpreter2" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Silent Interpreter v1</h3>
+                            <p class="description">First iteration of the AI speech analysis platform — transcription, emotion detection, and content summarization for accessibility.</p>
+                            <div class="project-tech"><span>Python</span><span>Streamlit</span><span>Whisper</span><span>Transformers</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Silent-Interpreter1" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ai" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Gehri Baten</h3>
+                            <p class="description">LSTM-powered AI poet that generates ghazals and nazms in Roman Urdu using deep learning and a Streamlit interface.</p>
+                            <div class="project-tech"><span>Python</span><span>TensorFlow</span><span>Keras</span><span>Streamlit</span><span>LSTM</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Gehri-Baten-" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>DeafEd Admin Panel</h3>
+                            <p class="description">Educator admin dashboard for DeafEd — manage students, sections, lessons, and progress tracking with EJS templating and MongoDB.</p>
+                            <div class="project-tech"><span>Node.js</span><span>Express</span><span>EJS</span><span>MongoDB</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/DeafEd-Admin" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="desktop" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Global Economy Analyzer</h3>
+                            <p class="description">Visualization tool using Python and Qt Designer to analyze economic trends with statistical methods and regression.</p>
+                            <div class="project-tech"><span>Python</span><span>Qt Designer</span><span>Pandas</span><span>Matplotlib</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Global-Economy-Analyzer" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Web Design Practice</h3>
+                            <p class="description">Front-end design practice project with HTML and CSS — layout experimentation and styling fundamentals.</p>
+                            <div class="project-tech"><span>HTML</span><span>CSS</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/kk" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Academic Work Collection</h3>
+                            <p class="description">Collection of academic assignments — HTML/CSS exercises, database projects, and structured programming tasks from coursework.</p>
+                            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Access DB</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Academic-work" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>E-commerce Website</h3>
+                            <p class="description">Feature-rich e-commerce platform with dynamic product catalog, shopping cart, and category-based browsing built with Django.</p>
+                            <div class="project-tech"><span>Django</span><span>Python</span><span>Bootstrap</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/E-shop" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="desktop" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>Student Management System</h3>
+                            <p class="description">Comprehensive system for managing student records, attendance, and grades with a user-friendly GUI and SQL database.</p>
+                            <div class="project-tech"><span>C#</span><span>SQL</span><span>WinForms</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/Student-Management-System" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="desktop" data-aos="fade-up">
+                        <div class="project-body">
+                            <h3>NotePad</h3>
+                            <p class="description">Text editor with Huffman Coding compression and Trie-based auto-suggestion using optimized data structures.</p>
+                            <div class="project-tech"><span>C++</span><span>Huffman Tree</span><span>Trie</span><span>File Handling</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/HasanSohaib-4434/NotePad" class="btn-custom btn-primary-custom btn-sm-custom" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Project</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-custom">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://github.com/HasanSohaib-4434" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/Hasan-Sohaib" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:sohaibhasanpk@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-text">&copy; 2026 <span>Hasan Sohaib</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
